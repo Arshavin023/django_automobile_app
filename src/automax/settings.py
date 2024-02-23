@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'localflavor',
+    'crispy_forms',
     'main',
     'users',
 ]
@@ -119,6 +120,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Media Files (Uploaded Files)
+MEDIA_ROOT = Path(BASE_DIR,'media')
+MEDIA_URL = '/media/'
+
+# Djano Crispy Form settings
+# CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
