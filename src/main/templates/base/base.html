@@ -28,6 +28,17 @@
     <div> 
     {% endfor %}
     {% endif %}
+    {% block 'header' %}
+    <header class="p=3 bg-dark text-white w-100 nav-masthead">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="{% url 'home' %}" "d-flex flex-wrap align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                
+                </a>
+            </div>
+        </div>
+    </header>
+    {% endblock %}
     {% block 'body'%}
     {% endblock %}
 </body>
